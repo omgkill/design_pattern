@@ -3,11 +3,13 @@ package com.jing.design.装饰着模式.decorate;
 import com.jing.design.装饰着模式.Beverage;
 import com.jing.design.装饰着模式.CondimentDecorator;
 
+/**
+ * n.	摩卡咖啡
+ */
 public class Mocha extends CondimentDecorator {
 
-    private Beverage be;
     public Mocha(Beverage b){
-        be = b;
+        super(b);
     }
 
     @Override
@@ -16,7 +18,7 @@ public class Mocha extends CondimentDecorator {
     }
 
     @Override
-    public double cost() {
-        return 99+be.cost();
+    public float cost() {
+        return 99+super.cost();
     }
 }

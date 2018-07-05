@@ -8,19 +8,17 @@ import com.jing.design.装饰着模式.CondimentDecorator;
  */
 public class Milk extends CondimentDecorator {
 
-    private Beverage b;
-
-    public Milk(Beverage be){
-        b = be;
+    public Milk(Beverage beverage){
+        super(beverage);
     }
 
     @Override
     public String getDescription() {
-        return null;
+        return super.getDescription()+" Milk";
     }
 
     @Override
-    public double cost() {
-        return 33+b.cost();
+    public float cost() {
+        return super.cost()+2;
     }
 }

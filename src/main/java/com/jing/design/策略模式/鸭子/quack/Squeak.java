@@ -1,4 +1,4 @@
-package com.jing.design.策略模式.quack;
+package com.jing.design.策略模式.鸭子.quack;
 
 public class Squeak implements QuackBehavior {
     @Override

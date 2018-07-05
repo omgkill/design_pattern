@@ -1,6 +1,4 @@
-package com.jing.design.策略模式.fly;
-
-import com.jing.design.策略模式.fly.FlyBehavior;
+package com.jing.design.策略模式.鸭子.fly;
 
 public class FlyWithWings implements FlyBehavior {
     @Override

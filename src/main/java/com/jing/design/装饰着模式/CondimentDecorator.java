@@ -1,6 +1,5 @@
 package com.jing.design.装饰着模式;
 
-import java.io.LineNumberInputStream;
 
 /**
  * 装饰类
@@ -17,8 +16,25 @@ import java.io.LineNumberInputStream;
  *      3、装饰者导致设计中出现许多小对象，如果过度使用，会让程序变得很复杂
  *
  */
-public abstract class CondimentDecorator extends Beverage  {
 
-    public abstract   String getDescription();
+/**
+ * n.	饮料
+ */
+public abstract class CondimentDecorator implements Beverage  {
+
+    private Beverage beverage;
+
+    public CondimentDecorator(Beverage beverage) {
+        this.beverage = beverage;
+    }
+    @Override
+    public String getDescription() {
+        return beverage.getDescription();
+    }
+
+    @Override
+    public float cost() {
+        return beverage.cost();
+    }
 
 }

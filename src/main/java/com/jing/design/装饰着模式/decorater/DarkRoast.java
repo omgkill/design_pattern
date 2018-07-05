@@ -2,14 +2,17 @@ package com.jing.design.装饰着模式.decorater;
 
 import com.jing.design.装饰着模式.Beverage;
 
-public class DarkRoast extends Beverage {
+public class DarkRoast implements Beverage {
 
-    Beverage b;
-    public DarkRoast(Beverage beverage){
-        this.b = beverage;
-    }
+    private final String description = "DarkRoast";
+
     @Override
-    public double cost() {
-        return b.cost()+11;
+    public String getDescription() {
+        return description;
+    }
+
+    @Override
+    public float cost() {
+        return 33;
     }
 }

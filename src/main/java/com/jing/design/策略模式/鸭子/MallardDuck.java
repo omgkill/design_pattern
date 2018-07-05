@@ -1,7 +1,7 @@
-package com.jing.design.策略模式;
+package com.jing.design.策略模式.鸭子;
 
-import com.jing.design.策略模式.fly.FlyWithWings;
-import com.jing.design.策略模式.quack.Quack;
+import com.jing.design.策略模式.鸭子.fly.FlyWithWings;
+import com.jing.design.策略模式.鸭子.quack.Quack;
 
 public class MallardDuck extends Duck {
 

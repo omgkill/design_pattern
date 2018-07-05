@@ -1,6 +1,6 @@
-package com.jing.design.策略模式;
+package com.jing.design.策略模式.鸭子;
 
-import com.jing.design.策略模式.fly.FlyNoWay;
+import com.jing.design.策略模式.鸭子.fly.FlyNoWay;
 
 public class testDuck {
     /**
@@ -11,6 +11,7 @@ public class testDuck {
      *
      *  @author jingShuai
      *  @return void
+     *  wildDuck  野鸭
      */
     public static void main(){
         Duck duck = new MallardDuck();

@@ -1,7 +1,7 @@
-package com.jing.design.策略模式;
+package com.jing.design.策略模式.鸭子;
 
-import com.jing.design.策略模式.fly.FlyBehavior;
-import com.jing.design.策略模式.quack.QuackBehavior;
+import com.jing.design.策略模式.鸭子.fly.FlyBehavior;
+import com.jing.design.策略模式.鸭子.quack.QuackBehavior;
 
 public class Duck {
 

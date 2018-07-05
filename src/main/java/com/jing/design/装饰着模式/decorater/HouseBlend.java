@@ -2,15 +2,17 @@ package com.jing.design.装饰着模式.decorater;
 
 import com.jing.design.装饰着模式.Beverage;
 
-public class HouseBlend extends Beverage {
+public class HouseBlend implements Beverage {
 
-    private Beverage beverage;
+    private final String description = "HouseBlend";
 
-    public HouseBlend(Beverage b){
-        this.beverage = b;
+    @Override
+    public String getDescription() {
+        return description;
+    }
 
-    }    @Override
-    public double cost() {
-        return 33+beverage.cost();
+    @Override
+    public float cost() {
+        return 33;
     }
 }
