@@ -9,5 +9,5 @@ Subject、Observer、DisplayElement是接口
  > Observer 是观察者，update方法<br>
  > DisplayElement 是展示栏
  
- > ###共享session例子
+ > ### 共享session例子
  > 使用的就是java.util的observer。具体流程，每次请求封装session，请求结束后，判断session有没有改变，改变就更新redis的数据。
