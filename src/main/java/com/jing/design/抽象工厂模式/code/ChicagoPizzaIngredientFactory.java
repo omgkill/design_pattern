@@ -1,6 +1,6 @@
-package com.jing.design.抽象工厂模式;
+package com.jing.design.抽象工厂模式.code;
 
-public class NYPizzaIngredientFactory implements  PizzaIngredientFactory {
+public class ChicagoPizzaIngredientFactory implements PizzaIngredientFactory {
     @Override
     public String createDough() {
         return null;

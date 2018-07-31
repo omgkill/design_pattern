@@ -1,4 +1,4 @@
-package com.jing.design.适配器模式;
+package com.jing.design.适配器模式.code;
 
 public class OldInterface {
 

@@ -1,4 +1,6 @@
-package com.jing.design.工厂模式;
+package com.jing.design.工厂模式.code;
+
+import com.jing.design.工厂模式.code.pizza.Pizza;
 
 public abstract class PizzaStore {
     /**
@@ -26,8 +28,6 @@ public abstract class PizzaStore {
         pizza.cut();
         pizza.box();
         return pizza;
-
-
     }
 
     protected  abstract  Pizza createPizza(String type);

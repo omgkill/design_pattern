@@ -1,4 +1,4 @@
-package com.jing.design.外观模式;
+package com.jing.design.外观模式.code;
 
 public class Memory {
 

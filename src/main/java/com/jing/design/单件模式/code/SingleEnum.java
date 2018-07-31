@@ -1,4 +1,4 @@
-package com.jing.design.单件模式;
+package com.jing.design.单件模式.code;
 
 public enum  SingleEnum {
      instance;

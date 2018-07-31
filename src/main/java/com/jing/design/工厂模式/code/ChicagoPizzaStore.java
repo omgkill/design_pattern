@@ -1,4 +1,6 @@
-package com.jing.design.工厂模式;
+package com.jing.design.工厂模式.code;
+
+import com.jing.design.工厂模式.code.pizza.Pizza;
 
 public class ChicagoPizzaStore extends PizzaStore {
     /**
