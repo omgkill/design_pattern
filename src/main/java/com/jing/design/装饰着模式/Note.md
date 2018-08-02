@@ -15,4 +15,8 @@
  ## 例子
  >数据流
  #### 自己用过的例子
- > 真没有
+  共享session的一个例子，
+  request,HttpServletRequestWrapper就是HttpservletRequest的装饰类。而httpserverletReuest是接口，具体的对象还在tomcat里。
+ -  HttpServletRequestWrapper是装饰类，那这个类的作用是什么？
+ - 为何不直接继承具体类，这样更简单。
+ -  因为具体类有多个时，我们就需要进行解耦

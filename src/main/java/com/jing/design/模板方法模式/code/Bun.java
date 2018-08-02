@@ -1,10 +1,9 @@
-package com.jing.design.模板方法模式;
+package com.jing.design.模板方法模式.code;
 
 /**
- * 包子
+ * 馒头
  */
-public class Rube extends AbstractModel {
-
+public class Bun extends AbstractModel {
     @Override
     public void prepare() {
 
