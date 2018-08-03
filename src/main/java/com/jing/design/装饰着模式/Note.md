@@ -19,8 +19,7 @@
  >> 装饰者：BufferedInputStream, CheckedInputStream, CipherInputStream,DataInputStream, DeflaterInputStream, DigestInputStream,InflaterInputStream, LineNumberInputStream, ProgressMonitorInputStream,PushbackInputStream <br>
  >> 被装饰者：AudioInputStream, ByteArrayInputStream, FileInputStream,FilterInputStream,ObjectInputStream, PipedInputStream, SequenceInputStream,StringBufferInputStream
  #### 自己用过的例子
-  共享session的一个例子，
-  request,HttpServletRequestWrapper就是HttpservletRequest的装饰类。而httpserverletReuest是接口，具体的对象还在tomcat里。
- -  HttpServletRequestWrapper是装饰类，那这个类的作用是什么？
- - 为何不直接继承具体类，这样更简单。
- -  因为具体类有多个时，我们就需要进行解耦
+  共享session的一个例子，功能点是：覆盖reqest.getSession()这个方法 <br>
+  HttpServletRequestWrapper是装饰类，httpServletRequest是父类(接口)，具体被装饰的对象在servlet-api/tomcat里
+ >  疑问： HttpServletRequestWrapper是装饰类，那这个类的作用是什么？为何不直接继承具体类，这样更简单。 <br>
+ >  解答：  因为具体类有多个时，我们就需要进行解耦;多用组合，少用继承
