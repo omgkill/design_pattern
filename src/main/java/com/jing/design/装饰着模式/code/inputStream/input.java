@@ -1,12 +1,6 @@
-package com.jing.design.装饰着模式.inputStream;
+package com.jing.design.装饰着模式.code.inputStream;
 
-import javax.crypto.CipherInputStream;
-import javax.swing.*;
 import java.io.*;
-import java.security.DigestInputStream;
-import java.util.zip.CheckedInputStream;
-import java.util.zip.DeflaterInputStream;
-import java.util.zip.InflaterInputStream;
 
 public class input {
 

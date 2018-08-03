@@ -1,4 +1,4 @@
-package com.jing.design.装饰着模式;
+package com.jing.design.装饰着模式.code;
 
 /**
  *  Beverage 是饮料

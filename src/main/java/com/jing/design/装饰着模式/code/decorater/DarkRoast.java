@@ -1,6 +1,6 @@
-package com.jing.design.装饰着模式.decorater;
+package com.jing.design.装饰着模式.code.decorater;
 
-import com.jing.design.装饰着模式.Beverage;
+import com.jing.design.装饰着模式.code.Beverage;
 
 public class DarkRoast implements Beverage {
 

@@ -13,7 +13,11 @@
  * 增加代码复杂度，使用者不知道到底导入了多少个装饰着
  * 装饰者导致设计中出现许多小对象，如果过度使用，会让程序变得很复杂
  ## 例子
- >数据流
+ > 数据流 
+ >> 父类：InputStream <br>
+ >> 装饰类：FilterInputStream <br>
+ >> 装饰者：BufferedInputStream, CheckedInputStream, CipherInputStream,DataInputStream, DeflaterInputStream, DigestInputStream,InflaterInputStream, LineNumberInputStream, ProgressMonitorInputStream,PushbackInputStream <br>
+ >> 被装饰者：AudioInputStream, ByteArrayInputStream, FileInputStream,FilterInputStream,ObjectInputStream, PipedInputStream, SequenceInputStream,StringBufferInputStream
  #### 自己用过的例子
   共享session的一个例子，
   request,HttpServletRequestWrapper就是HttpservletRequest的装饰类。而httpserverletReuest是接口，具体的对象还在tomcat里。

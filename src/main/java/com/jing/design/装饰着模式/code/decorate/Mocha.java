@@ -1,7 +1,7 @@
-package com.jing.design.装饰着模式.decorate;
+package com.jing.design.装饰着模式.code.decorate;
 
-import com.jing.design.装饰着模式.Beverage;
-import com.jing.design.装饰着模式.CondimentDecorator;
+import com.jing.design.装饰着模式.code.Beverage;
+import com.jing.design.装饰着模式.code.CondimentDecorator;
 
 /**
  * n.	摩卡咖啡

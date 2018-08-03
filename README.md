@@ -10,7 +10,7 @@
   - 有人说这是饿汉模式，服务一启动就加载。
  > enum 
  - 枚举模式，好处：防止反射、反编译、返序列化、确保加载一个。在枚举初始化的时候实例化
- ##好处
+ ## 好处
  单例模式减少重复创建，节省空间，加载速度更快，节省时间。单例模式是无状态的
  
 <br><br>
@@ -112,6 +112,7 @@
   <br><br>
   
   # 装饰者模式
+  
   ## 概念
   &emsp;&emsp; 动态地将责任附加到对象上。若要扩展功能，装饰者提供了
       比继承更有弹性的替代方案或者 **可以这样说包装对象**
@@ -125,13 +126,18 @@
    * 增加代码复杂度，使用者不知道到底导入了多少个装饰着
    * 装饰者导致设计中出现许多小对象，如果过度使用，会让程序变得很复杂
    ## 例子
-   >数据流
+   > 数据流 
+   >> 父类：InputStream <br>
+   >> 装饰类：FilterInputStream <br>
+   >> 装饰者：BufferedInputStream, CheckedInputStream, CipherInputStream,DataInputStream, DeflaterInputStream, DigestInputStream,InflaterInputStream, LineNumberInputStream, ProgressMonitorInputStream,PushbackInputStream <br>
+   >> 被装饰者：AudioInputStream, ByteArrayInputStream, FileInputStream,FilterInputStream,ObjectInputStream, PipedInputStream, SequenceInputStream,StringBufferInputStream
    #### 自己用过的例子
     共享session的一个例子，
     request,HttpServletRequestWrapper就是HttpservletRequest的装饰类。而httpserverletReuest是接口，具体的对象还在tomcat里。
    -  HttpServletRequestWrapper是装饰类，那这个类的作用是什么？
    - 为何不直接继承具体类，这样更简单。
    -  因为具体类有多个时，我们就需要进行解耦
+   
    <br><br>
    
 # 观察者模式
