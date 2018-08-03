@@ -1,7 +1,7 @@
-package com.jing.design.观察者模式.display;
+package com.jing.design.观察者模式.code.display;
 
-import com.jing.design.观察者模式.DisplayElement;
-import com.jing.design.观察者模式.Observer;
+import com.jing.design.观察者模式.code.DisplayElement;
+import com.jing.design.观察者模式.code.Observer;
 
 public class ForecastDisplay implements Observer, DisplayElement {
     @Override
